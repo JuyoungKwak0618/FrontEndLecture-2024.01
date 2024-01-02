@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .div1{margin: 20px;}
+    h1{margin-bottom: -20px;}
+    
+    .div2{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        overflow: hidden;
+        
+          
+    }
+    .div2 ul{
+        list-style-type: none;
+        
+    }
+    .div2 ul li:not(.div2 ul ul li){
+        float: left;
+        margin: -10px 20px;
+        margin-bottom: 5px;
+      
+        
+       
+        
+        
+       
+    }
+    .div2 ul ul li{
+        float: right;
+        margin-top: -10px;
+    }
+   .div3{
+        display: inline-block;
+        width: 300px;}
+    .div4 ul{
+        list-style-type: none;
+        
+    }
+    a{
+        text-decoration: none;
+        color: gray;
+    }
+
+    .div4{
+        float: right;
+        margin-right: 150px;
+        margin-top: 30px;
+       
+    }
+    .div4 h3{
+        margin-bottom: 5px;
+        
+    }   
+    .div4 li{padding-left: 10px;}
+
+    .div5{
+        border-top:1px solid black;
+        margin-top: 300px;
+    }
+
+
+
+    
+
+    
+    
+    
+    
+    
+        
+    
+    
+    
+
+    
+
+</style>
+<body>
+    <fieldset>
+        <legend></legend>
+        <div class="div1">
+        <h1>HTML5 Example Preivew</h1>
+        <p>한빛아카데미</p>
+        </div>
+        <div class="div2">
+            <ul>
+                <li>
+                    <select>
+                        <option>HTML</option>
+                    </select>
+                </li>
+                <li>
+                    <select>
+                        <option>CSS3</option>
+                    </select>
+                </li>
+                <li>
+                    <select>
+                        <option>JavaScript</option>
+                    </select>
+                </li>
+                <ul>
+                    <li><input type="button" value="검색"/></li>
+                    <li><input type="text"/></li>
+
+                </ul>
+
+
+            </ul>
+
+        </div>
+
+        <div class="div3">
+            <h1>HTML5 개요와 활용</h1>
+            <P>2019년 02월 14일</P>
+            <img src="test.jpg" width="430" height="280"/>
+            <p>테스트데이터</p>
+            
+
+            
+        
+        </div>
+
+        <div class="div4">
+            <ul>
+                <h3>카테고리</h3>
+                <li><a href="#">데이터</a></li>
+                <li><a href="#">데이터</a></li>
+                <li><a href="#">데이터</a></li>
+                <li><a href="#">데이터</a></li>
+                <li><a href="#">데이터</a></li> 
+            </ul>
+            <ul>
+                <h3>최근 글</h3>
+                <li><a href="#">데이터</a></li>
+                <li><a href="#">데이터</a></li>
+                <li><a href="#">데이터</a></li>
+                <li><a href="#">데이터</a></li>
+            </ul>
+        </div>
+
+             <div class="div5">
+            IT Cookbook HTML5 Programming
+             </div>
+
+
+        </div>
+    </fieldset>
+    
+</body>
+</html>

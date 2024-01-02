@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#main{/*border: 1px solid black;*/
+     width: 500px;
+     height: 600px;
+    margin: auto;
+    }
+#top{/*border : 1px solid red;*/
+    height: 70px;}
+#middle{border: 1px solid rgba(0, 0, 0, 0.15);
+       }
+#bottom{/*border: 1px solid red;*/}
+#m1{display: flex;
+            justify-content: center;
+            padding-top: 20px;
+            padding-bottom: 30px;}
+#inputDiv{border: 1px solid rgba(0, 0, 0, 0.15);
+           width: 350px; 
+            margin: auto;
+            border-radius: 3px;}
+.inputTag{width: 346px;
+        outline: none;}
+        #id1{
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            border-color: rgba(0, 0, 0, 0.15);}
+#pw{
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            border-bottom: 0px;}
+ #btnDiv{
+        /*border: 1px solid black;*/ 
+        width: 350px;
+        margin: auto;
+        padding-top: 20px;
+       
+        }
+#loginBtn{background-color: rgb(255, 0, 55);
+            width: 350px;
+            height: 40px;
+            font-size: 15px;
+            color: white;
+            margin: auto;
+            border-radius: 5px;
+            border: none;}
+.hr-sect {
+            display: flex;
+            flex-basis: 100%;
+            align-items: center;
+            color: rgba(0, 0, 0, 0.35);
+            font-size: 12px;
+            margin: 8px 0px;
+            padding-top:20px;
+           
+           
+        }
+.hr-sect::before,
+.hr-sect::after {
+            content: "";
+            flex-grow: 1;
+            background: rgba(0, 0, 0, 0.15);
+            height: 1px;
+            font-size: 0px;
+            line-height: 0px;
+            margin: 0px 50px;
+            }
+
+#chk2{text-align:center;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        font-size: 12px;}
+.name{text-decoration: none;
+            color: black;}
+#href{border-radius: 4px;}
+
+#imgsns{text-align: center;}
+
+
+
+
+         
+      
+
+</style>
+<body>
+    <div id="main">
+            <div id="top">
+            </div>
+
+            <div id="middle">
+                <div id="m1">
+                <a href="#"><img src="11st.svg"></a>    
+                </div>
+                <div id="inputDiv">
+                <input type="text" placeholder="아이디 입력" class="inputTag" id="id1"><br/>
+                <input type="password" placeholder="비밀번호 8자~20자" class="inputTag" id="pw">
+                </div>
+                <div id="btnDiv">
+                    <button type="button" id="loginBtn">로그인</button>
+                    <input type="checkbox" id="chk1">
+                    <label for="chk1">로그인 상태 유지</label>
+                </div>
+                
+                
+                <div class="hr-sect">또는 SNS 아이디로 로그인</div>
+                <div id="imgsns">
+                    <a href="#"><img src="sns-kakao.svg"></a>
+                    <a href="#"><img src="sns-naver.svg"></a>
+                    <a href="#"><img src="sns-tid.svg"></a>
+                    <a href="#"><img src="sns-apple.svg"></a>
+                    <a href="#"><img src="sns-payco.svg"></a>
+                    <a href="#"><img src="sns-facebook.svg"></a>
+                    <a href="#"><img src="sns-phone.svg"></a>
+                   
+                </div>
+                
+
+                
+
+            </div>
+
+            <div id="bottom">
+                <div id="chk2">
+                <a href="#" class="name">아이디찾기</a>
+                <a href="#" class="name">비밀번호찾기</a>
+                <a href="#" class="name">비회원 주문조회</a>
+                <a href="#" class="name">회원가입</a>
+
+                </div>
+                <div id="href">
+                <a href="#"><img src="2023122009052027821_13147049_1.png" width="500"></a>
+                </div>
+
+            </div>
+
+           
+    </div>
+    
+</body>
+</html>
