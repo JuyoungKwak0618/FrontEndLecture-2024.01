@@ -56,19 +56,20 @@ for (let i = 0; i < 5; i++ ){
 // 다이아몬드 완성
 
 let maxDia = 7;
-let N = parseInt (7/2);
+let N = parseInt(7/2);
 for (let i =0; i <= N; i++){
     let line = '';
     for(let k = 0; k < N-i; k++)
-        line +=' ';
-    for(let k = 0; k < 2*i+1; k++)
-        line +='*'
-    console.log(line);
+    line +='1';
+for(let k = 0; k < 2*i+1; k++)
+line +='*'
+console.log(line);
 }
 for(let i = N-1; i >= 0; i--) {
     let line = '';
+    // console.log(N);
     for(let k = 0; k < N-i; k++)
-        line +=' ';
+        line +='2';
     for(let k = 0; k < 2*i+1; k++)
         line +='*'
     console.log(line);
