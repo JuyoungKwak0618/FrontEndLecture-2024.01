@@ -12,7 +12,7 @@ else
 if(H==-1)
     H=23;
 
-console.log(`${H} ${M}`);
+console.log(`${H} ${M}`); 
 
     
 
