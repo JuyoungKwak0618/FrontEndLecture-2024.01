@@ -7,7 +7,7 @@ for(let i = 1; i <= Num; i++){
 }
 console.log(divisors)
 
-// 두 수의 공약수 구하기
+// 두수의 공약수 구하기
 let num1 = 24, num2 = 60;
 let commonDivisors = [];
 for(let i =1; i <= Math.min(num1,num2); i++){
