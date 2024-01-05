@@ -30,18 +30,7 @@
         let resultTag = document.getElementById('result');
         resultTag.innerHTML = diamond;
      }
-        function button1() {
-            let num1 = Number(document.getElementBydId('input1'.value));
-            let num2 = Number( document.getElementBydId('input2'.value));
-            let commonDivisors = [];
-            for(let i =1; i <= Math.min(num1,num2); i++){
-                if(num1 % i == 0 && num2 % i == 0)
-                    commonDivisors.push(i);
-            }
-            document.write(`${num1},${num2}의 공약수는 ${commonDivisors}`);
-            let resultTag = document.getElementById('result');
-            resultTag.innerHTML= divisors
-        }
+    
         
         
 
@@ -57,11 +46,6 @@
         
         <hr/>
         <input type="text" name="" id="input1"/>
-        <br/>
-        <input type="text" name="" id="input2"/>
-        <br/>
-        <button onclick="button1()">클릭</button>
-        
 
         <div id="result"></div>
 
