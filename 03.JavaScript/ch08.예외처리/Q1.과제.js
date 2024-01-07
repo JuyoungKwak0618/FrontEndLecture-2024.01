@@ -25,7 +25,7 @@
    
       /*  2.백준도장 31090 참조
       다음의 사례에 대해서 Good/Bye를 출력하세요.
-        2023,2024,...AbortController.2040
+         2023,2024,...AbortController.2040
 
       단,조건에 맞는지를 확인해주는 함수 isDivsible(year)를 만들어서
       해결하세요. */
