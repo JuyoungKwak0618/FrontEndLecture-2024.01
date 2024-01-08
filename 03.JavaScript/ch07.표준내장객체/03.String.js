@@ -20,7 +20,7 @@ ASCII code 1바이트로 구성 (영문자, 숫자, 특수기호 등) */
 console.log(hello[1], hello.charAt(1))              //'녕'
 console.log(hello + '여러분!',hello.concat('여러분!'))
 console.log(hello.indexOf('하'));                   // 2
-console.log('pineapple'.lastIndexOf('p'))           // 6
+console.log('pineapple'.lastIndexOf('p'))           // 6       
 
 //문자열을 분리하여 배열을 반환
 let fruits = '사과,배,감,포도';
