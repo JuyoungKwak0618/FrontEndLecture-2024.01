@@ -13,3 +13,4 @@ console.log(Number.MAX_VALUE, Number.MIN_VALUE);
 console.log(Number.MAX_SAFE_INTEGER, Number.MIN_SAFE_INTEGER);
 console.log(Number.NEGATIVE_INFINITY, Number.POSITIVE_INFINITY);
 console.log(Math.pow(2, 53)-1);             //  Number.MAX_SAFE_INTEGER
+
