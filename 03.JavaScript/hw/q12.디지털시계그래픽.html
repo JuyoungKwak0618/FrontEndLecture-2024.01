@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디지털 시계</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        function twoDigit(num) {
+            return (num <10) ? '0'+num : String(num);   //4 --> '04', 23 --> '23'
+        }
+        function myDateTime(date) {
+            return `${date.getFullYear()}-${twoDigit(date.getMonth()+1)}-${twoDigit(date.getDate())} ` +
+                    `${twoDigit(date.getHours())}:${twoDigit(date.getMinutes())}:${twoDigit(date.getSeconds())}`;
+
+        }
+        $(document).ready(() => {
+            setInterval(function(){
+                const now = new Date();
+                const week ='일월화수목금토'.split('');         //['일',...,'토']
+                let dateStr = myDateTime(now).substring(2, 10);
+                dateStr += '('+week[now.getDay()]+')';
+                const timeStr = myDateTime(now).substring(11);
+                $('#date').text(dateStr)
+                
+                $('#h1').attr('src',`../ch13.문서객체모델/img/${timeStr[0]}.svg`)
+               
+            },1000);
+        });
+       
+        
+
+    </script>
+<body style="margin: 50px;">
+    <h2 id="date"></h2>
+    <hr/>
+    <img id="h1" style="width: 100px;">
+    <img id="h2" style="width: 100px;">
+    <img src="../ch13.문서객체모델/img/Colon.jpg" style="width: 100px;">
+    <img id="m1" style="width: 100px;">
+    <img id="m2" style="width: 100px;">
+    <img src="../ch13.문서객체모델/img/Colon.jpg" style="width: 100px;">
+    <img id="s1" style="width: 100px;">
+    <img id="s2" style="width: 100px;">
+   
+</body>
+</html>

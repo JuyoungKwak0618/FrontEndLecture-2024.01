@@ -5,6 +5,7 @@ let fruits = ['apple', 'banana', 'cherry'];
 let cars = new Array('Audi', 'Benz', 'BMW');
 console.log(cars);
 
+
 // 2.배열 속성
 console.log(cars.length);
 
