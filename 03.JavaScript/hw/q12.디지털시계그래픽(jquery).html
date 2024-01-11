@@ -23,7 +23,13 @@
                 const timeStr = myDateTime(now).substring(11);
                 $('#date').text(dateStr)
                 
-                $('#h1').attr('src',`../ch13.문서객체모델/img/${timeStr[0]}.svg`)
+                $('#h1').attr('src',`../ch13.문서객체모델/img/${timeStr[0]}.svg`);
+                $('#h2').attr('src',`../ch13.문서객체모델/img/${timeStr[1]}.svg`);
+                $('#m1').attr('src',`../ch13.문서객체모델/img/${timeStr[3]}.svg`);
+                $('#m2').attr('src',`../ch13.문서객체모델/img/${timeStr[4]}.svg`);
+                $('#s1').attr('src',`../ch13.문서객체모델/img/${timeStr[6]}.svg`);
+                $('#s2').attr('src',`../ch13.문서객체모델/img/${timeStr[7]}.svg`);
+              
                
             },1000);
         });
