@@ -13,7 +13,7 @@
       td { text-align: center;}
    </style>   
 </head>
-<body>
+<body style="height:1500px">
   <div class="container-fluid p-3 bg-primary text-white text-center">
     <h1>첫번째 부트스트랩 페이지</h1>
     <p>form</p> 
@@ -82,13 +82,34 @@
 
     <div class="row mt-4">
       <div class="col">
+        <h3>Select Menu</h3>
+        <p>To style a select menu in Bootstrap 5, add the .form-select class to the select element:</p>
+        <form action="/action_page.php">
+          <label for="sel1" class="form-label">Select list (select one):</label>
+          <select class="form-select" id="sel1" name="sellist1">
+            <option>1</option>
+            <option>2</option>
+            <option selected>3</option>
+            <option>4</option>
+        </form>
+        </select>
 
       </div>
       <div class="col">
-
+        <h3>Select Menu</h3>
+        <p>To style a select menu in Bootstrap 5, add the .form-select class to the select element:</p>
+        <form action="/action_page.php">
+          <label for="sel1" class="form-label">Multiple Select list (multiple select):</label>
+          <select multiple class="form-select" id="sel1" name="sellist1">
+            <option value="0">사과</option>
+            <option value="1">오렌지</option>
+            <option value="2" selected>포도</option>
+            <option value="3">딸기</option>
+            <option value="4">바나나</option>
+        </form>
       </div>
       <div class="col">
-        
+          
       </div>
     </div>
   </div>
