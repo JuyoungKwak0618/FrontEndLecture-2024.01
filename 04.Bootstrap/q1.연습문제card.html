@@ -57,29 +57,42 @@
 
 <body>
   <div class="container-fluid p-3 bg-primary text-white text-center">
-    <h1>자바스크립트 연습문제</h1>
-
+    <h1>240111 과제</h1>
+    <p>부트스트랩 화면</p>
   </div>
 
   <div class="container mt-3">
     <div class="row">
       <div class="col">
         <div class="card" style="width:400px">
-          <h3>Q1.2의 거듭제곱</h3>
-          <input type="text" id="num1" placeholder="1~20 사이의 정수" />
-          <input type="text" id="num2" placeholder="10~30 사이의 정수" />
+          <h3 class="text-">Q1.2의 거듭제곱</h3>
+          <div class="mb-3 mt-3">
+            <label for="num1">첫번째 수:</label>
+            <input type="text" class="form-control" id="num1" placeholder="1~20 사이의 정수" />
+           
+          </div>
+          <div class="mb-3">
+            <label for="num2">두번째 수:</label>
+            <input type="text" id="num2" class="form-control" placeholder="10~30 사이의 정수" />
+          </div>
           <div class="card-body">
             <button type="button" onclick="ans1()" class="btn btn-primary col-6">확인</button>
-            <div id="result1"></div>
           </div>
+         
+            <div id="result1"></div>
           <br>
         </div>
       </div>
       <div class="col">
         <div class="card" style="width:400px">
           <h3>Q2. 특정 단어의 갯수</h3>
-          <textarea id="sentence" cols="70" rows="4"></textarea><br />
-          <input type="text" id="search" placeholder="찾을 단어">
+          <div class="mb-3 mt-3">
+            <label for="num1">문장:</label>
+            <textarea id="sentence" cols="70" rows="4" class="form-control"></textarea><br />
+          </div>
+          <div class="mb-3">
+          <!-- <label for="num2">찾을 단어:</label> -->
+          <input type="text" id="search" class="form-control" placeholder="찾을 단어를 입력하세요." />
           <div class="card-body">
             <button onclick="ans2()" class="btn btn-info"><span class="text-white">확인</span></button>
             <div id="result2"></div>
@@ -87,11 +100,14 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row mt-4">
       <div class="col">
         <div class="card" style="width:400px">
           <h3>03.내림차순 정렬</h3>
-          <input type="text" id="price" placeholder="가격을 ;으로 분리해서 입력" />
+          <div class="mb-3 mt-3">
+            <label for="price">가격:</label>
+            <input type="text" id="price" placeholder="가격을 ;으로 분리해서 입력" class="col-12"/>
+          </div>
           <div class="card-body">
             <button onclick="ans3()" class="btn btn-primary btn-block">확인</button>
             <hr>
@@ -101,17 +117,19 @@
       </div>
       <div class="col">
         <div class="card img-fluid" style="width:400px;">
+          
           <img class="card-img-top" src="subway.png" style="width:100%">
           <div class="card-img-overlay">
+          <h3>Q4.디지털시계</h3>
             <h2 id="date"></h2>
-            <img id="h1" style="width: 40px;">
-            <img id="h2" style="width: 40px;">
-            <img src="../03.JavaScript/ch13.문서객체모델/img/Colon.jpg" style="width: 40px;">
-            <img id="m1" style="width: 40px;">
-            <img id="m2" style="width: 40px;">
-            <img src="../03.JavaScript/ch13.문서객체모델/img/Colon.jpg" style="width: 40px;">
-            <img id="s1" style="width: 40px;">
-            <img id="s2" style="width: 40px;">
+            <img id="h1" style="width: 30px;">
+            <img id="h2" style="width: 30px;">
+            <img src="colon.png" style="width: 70px;">
+            <img id="m1" style="width: 30px;">
+            <img id="m2" style="width: 30px;">
+            <img src="colon.png" style="width: 70px;">
+            <img id="s1" style="width: 30px;">
+            <img id="s2" style="width: 30px;">
           </div>
         </div>
       </div>
