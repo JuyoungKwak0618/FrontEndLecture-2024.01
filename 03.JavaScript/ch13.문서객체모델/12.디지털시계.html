@@ -6,7 +6,7 @@
     <title>디지털 시계</title>
     <script>
         function twoDigit(num) {
-            return (num <10) ? '0'+num : String(num);   //4 --> '04', 23 --> '23'
+            return (num <10) ? '0'+num : String(num);   
         }
         function myDateTime(date) {
             return `${date.getFullYear()}-${twoDigit(date.getMonth()+1)}-${twoDigit(date.getDate())} ` +
@@ -16,7 +16,7 @@
         window.onload = function() {
             setInterval(function(){
                 const now = new Date();
-                const week ='일월화수목금토'.split('');         //['일',...,'토']
+                const week ='일월화수목금토'.split('');        
                 let dateStr = myDateTime(now).substring(2, 10);
                 dateStr += '('+week[now.getDay()]+')';
                 const timeStr = myDateTime(now).substring(11);
@@ -28,8 +28,7 @@
 
     </script>
 <body style="margin: 50px;">
-    <h2 id="date"></h2>
-    <br/>
-    <h1 id="time"></h1>
+    <h2 id="date" style="display: inline;"></h2>
+    <h2 id="time" style="display: inline;"></h2>
 </body>
 </html>

@@ -3,7 +3,7 @@
 // 12345678901011123131415...9991000
 
 let numStr = '';
-for(let i = 1; i<=1000; i++) {
+/* for(let i = 1; i<=1000; i++) {
     numStr += i;
 }
 
@@ -16,7 +16,7 @@ let pattern = new RegExp('[^' + i +']','g');
     Count = numStr.replace(pattern, '').length;
     console.log(`${i}: ${Count}`);
 }
-
+ */
 // count 배열을 만들어 일일이 체크
 
 let countArr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0,];

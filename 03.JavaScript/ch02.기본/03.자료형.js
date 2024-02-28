@@ -1,7 +1,7 @@
 // 자바스크립트의 자료형
 // 1.Number
  console.log(5 + 2, 5 - 2, 5 * 2, 5 /2);         // +,-,*,/
-console.log(5 %2 );         //modulo, 나머지
+console.log(5 % 2 );         //modulo, 나머지
 console.log(2 **10);        //2의 10제곱, 1024(1k)
 console.log(1.3e-8)         //1.3 x 10의 -8제곱 
 

@@ -46,3 +46,13 @@ let gradDay = new Date('2024-06-13 17:30');
 let diffMs = gradDay.getTime() - new Date().getTime();
 let diffDay =Math.ceil(diffMs / (1000 * 60 * 60 * 24))
 console.log(diffDay);
+
+function twoDigit(num) {
+    return (num <10) ? '0'+num : String(num);
+}
+function myDateTime(date) {
+    return `${date.getFullYear()}-${twoDigit(date.getMonth()+1)}-${twoDigit(date.getDate())} ` +
+            `${twoDigit(date.getHours())}:${twoDigit(date.getMinutes())}:${twoDigit(date.getSeconds())}`;
+
+}
+console.log(myDateTime(today))
